@@ -8,22 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		100BDEAF29A638F700FF4BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEAE29A638F700FF4BD6 /* AppDelegate.swift */; };
-		100BDEB129A638F700FF4BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEB029A638F700FF4BD6 /* SceneDelegate.swift */; };
-		100BDEB329A638F700FF4BD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEB229A638F700FF4BD6 /* ViewController.swift */; };
 		100BDEB629A638F700FF4BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100BDEB429A638F700FF4BD6 /* Main.storyboard */; };
 		100BDEB829A638F800FF4BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100BDEB729A638F800FF4BD6 /* Assets.xcassets */; };
 		100BDEBB29A638F800FF4BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100BDEB929A638F800FF4BD6 /* LaunchScreen.storyboard */; };
+		100BDEC529A63EC100FF4BD6 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */; };
+		100BDEC729A63F0700FF4BD6 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEC629A63F0700FF4BD6 /* BaseCoordinator.swift */; };
+		10206A0929AF4F1B005C94E4 /* QboxWebWidget in Frameworks */ = {isa = PBXBuildFile; productRef = 10206A0829AF4F1B005C94E4 /* QboxWebWidget */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		100BDEAB29A638F700FF4BD6 /* qweb_widget_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qweb_widget_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		100BDEAE29A638F700FF4BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		100BDEB029A638F700FF4BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		100BDEB229A638F700FF4BD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		100BDEB529A638F700FF4BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		100BDEB729A638F800FF4BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		100BDEBA29A638F800FF4BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		100BDEBC29A638F800FF4BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		100BDEC629A63F0700FF4BD6 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10206A0929AF4F1B005C94E4 /* QboxWebWidget in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +58,31 @@
 		100BDEAD29A638F700FF4BD6 /* qweb_widget_test */ = {
 			isa = PBXGroup;
 			children = (
+				100BDEC329A63E9C00FF4BD6 /* Modules */,
+				100BDEC229A63E9400FF4BD6 /* Base */,
 				100BDEAE29A638F700FF4BD6 /* AppDelegate.swift */,
-				100BDEB029A638F700FF4BD6 /* SceneDelegate.swift */,
-				100BDEB229A638F700FF4BD6 /* ViewController.swift */,
 				100BDEB429A638F700FF4BD6 /* Main.storyboard */,
 				100BDEB729A638F800FF4BD6 /* Assets.xcassets */,
 				100BDEB929A638F800FF4BD6 /* LaunchScreen.storyboard */,
 				100BDEBC29A638F800FF4BD6 /* Info.plist */,
 			);
 			path = qweb_widget_test;
+			sourceTree = "<group>";
+		};
+		100BDEC229A63E9400FF4BD6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				100BDEC629A63F0700FF4BD6 /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		100BDEC329A63E9C00FF4BD6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +101,9 @@
 			dependencies = (
 			);
 			name = qweb_widget_test;
+			packageProductDependencies = (
+				10206A0829AF4F1B005C94E4 /* QboxWebWidget */,
+			);
 			productName = qweb_widget_test;
 			productReference = 100BDEAB29A638F700FF4BD6 /* qweb_widget_test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 100BDEA229A638F600FF4BD6;
+			packageReferences = (
+				10206A0729AF4F1B005C94E4 /* XCRemoteSwiftPackageReference "QboxWebWidget" */,
+			);
 			productRefGroup = 100BDEAC29A638F700FF4BD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				100BDEB329A638F700FF4BD6 /* ViewController.swift in Sources */,
+				100BDEC729A63F0700FF4BD6 /* BaseCoordinator.swift in Sources */,
+				100BDEC529A63EC100FF4BD6 /* StartUpViewController.swift in Sources */,
 				100BDEAF29A638F700FF4BD6 /* AppDelegate.swift in Sources */,
-				100BDEB129A638F700FF4BD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,7 +316,6 @@
 				INFOPLIST_FILE = qweb_widget_test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +343,6 @@
 				INFOPLIST_FILE = qweb_widget_test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10206A0729AF4F1B005C94E4 /* XCRemoteSwiftPackageReference "QboxWebWidget" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xteclu/QboxWebWidget.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10206A0829AF4F1B005C94E4 /* QboxWebWidget */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10206A0729AF4F1B005C94E4 /* XCRemoteSwiftPackageReference "QboxWebWidget" */;
+			productName = QboxWebWidget;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 100BDEA329A638F600FF4BD6 /* Project object */;
 }
