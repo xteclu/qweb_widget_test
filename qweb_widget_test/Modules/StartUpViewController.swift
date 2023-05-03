@@ -3,7 +3,7 @@ import UIKit
 import Foundation
 import SafariServices
 import WebKit
-import QboxWebWidget
+//import QboxWebWidget
 
 class StartUpViewController: BaseViewController {
   
@@ -16,10 +16,9 @@ class StartUpViewController: BaseViewController {
     view.backgroundColor = .red
     present(
       WebViewController(settings: Settings(
-          url: "https://kenes.1414.kz/widget/video-call",
+          url: "https://demo.qxix.dev/widget/video-call/nonresident-verification",
           language: .ru,
-          call: Call(domain: "ios.kaspi.kz", type: .video, topic: "videotson",
-                     dynamicAttrs: ["service_code": "G-07"]
+          call: Call(domain: "ios.test", type: .video, topic: "dev"
                     )
       )),
       animated: false

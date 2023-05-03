@@ -14,6 +14,15 @@
 		100BDEC529A63EC100FF4BD6 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */; };
 		100BDEC729A63F0700FF4BD6 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEC629A63F0700FF4BD6 /* BaseCoordinator.swift */; };
 		10206A0929AF4F1B005C94E4 /* QboxWebWidget in Frameworks */ = {isa = PBXBuildFile; productRef = 10206A0829AF4F1B005C94E4 /* QboxWebWidget */; };
+		2518DDEB29F2824400731125 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2518DDEA29F2824400731125 /* SettingsModel.swift */; };
+		2518DDED29F2827F00731125 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2518DDEC29F2827F00731125 /* UserModel.swift */; };
+		2518DDEF29F2829200731125 /* CallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2518DDEE29F2829200731125 /* CallModel.swift */; };
+		2518DDF229F282EB00731125 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2518DDF129F282EA00731125 /* DeviceModel.swift */; };
+		2518DDF429F282F900731125 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2518DDF329F282F900731125 /* UIDevice.swift */; };
+		2518DDF729F2833700731125 /* QWebWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2518DDF629F2833700731125 /* QWebWidgetViewController.swift */; };
+		25B746202A02244B006F385F /* UIPipVideoCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B7461F2A02244B006F385F /* UIPipVideoCall.swift */; };
+		25F80A4829FC11CB00B90DAC /* UIPiP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F80A4729FC11CB00B90DAC /* UIPiP.swift */; };
+		25F80A4A29FC11EB00B90DAC /* UIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F80A4929FC11EB00B90DAC /* UIview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +34,16 @@
 		100BDEBC29A638F800FF4BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		100BDEC629A63F0700FF4BD6 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		2518DDEA29F2824400731125 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		2518DDEC29F2827F00731125 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2518DDEE29F2829200731125 /* CallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallModel.swift; sourceTree = "<group>"; };
+		2518DDF129F282EA00731125 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		2518DDF329F282F900731125 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		2518DDF629F2833700731125 /* QWebWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWebWidgetViewController.swift; sourceTree = "<group>"; };
+		2518DDF829F288BF00731125 /* QboxWebWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QboxWebWidget.h; sourceTree = "<group>"; };
+		25B7461F2A02244B006F385F /* UIPipVideoCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPipVideoCall.swift; sourceTree = "<group>"; };
+		25F80A4729FC11CB00B90DAC /* UIPiP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPiP.swift; sourceTree = "<group>"; };
+		25F80A4929FC11EB00B90DAC /* UIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,9 @@
 		100BDEAD29A638F700FF4BD6 /* qweb_widget_test */ = {
 			isa = PBXGroup;
 			children = (
+				25F80A4629FC11C100B90DAC /* Pip Controller */,
+				2518DDF529F2831600731125 /* Controller */,
+				2518DDE929F2821B00731125 /* Model */,
 				100BDEC329A63E9C00FF4BD6 /* Modules */,
 				100BDEC229A63E9400FF4BD6 /* Base */,
 				100BDEAE29A638F700FF4BD6 /* AppDelegate.swift */,
@@ -65,6 +87,7 @@
 				100BDEB729A638F800FF4BD6 /* Assets.xcassets */,
 				100BDEB929A638F800FF4BD6 /* LaunchScreen.storyboard */,
 				100BDEBC29A638F800FF4BD6 /* Info.plist */,
+				2518DDF829F288BF00731125 /* QboxWebWidget.h */,
 			);
 			path = qweb_widget_test;
 			sourceTree = "<group>";
@@ -83,6 +106,36 @@
 				100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		2518DDE929F2821B00731125 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2518DDEA29F2824400731125 /* SettingsModel.swift */,
+				2518DDEC29F2827F00731125 /* UserModel.swift */,
+				2518DDEE29F2829200731125 /* CallModel.swift */,
+				2518DDF129F282EA00731125 /* DeviceModel.swift */,
+				2518DDF329F282F900731125 /* UIDevice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2518DDF529F2831600731125 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2518DDF629F2833700731125 /* QWebWidgetViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25F80A4629FC11C100B90DAC /* Pip Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25F80A4729FC11CB00B90DAC /* UIPiP.swift */,
+				25F80A4929FC11EB00B90DAC /* UIview.swift */,
+				25B7461F2A02244B006F385F /* UIPipVideoCall.swift */,
+			);
+			path = "Pip Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +215,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2518DDEB29F2824400731125 /* SettingsModel.swift in Sources */,
 				100BDEC729A63F0700FF4BD6 /* BaseCoordinator.swift in Sources */,
+				25F80A4A29FC11EB00B90DAC /* UIview.swift in Sources */,
+				2518DDF229F282EB00731125 /* DeviceModel.swift in Sources */,
 				100BDEC529A63EC100FF4BD6 /* StartUpViewController.swift in Sources */,
+				2518DDEF29F2829200731125 /* CallModel.swift in Sources */,
+				25F80A4829FC11CB00B90DAC /* UIPiP.swift in Sources */,
+				2518DDED29F2827F00731125 /* UserModel.swift in Sources */,
 				100BDEAF29A638F700FF4BD6 /* AppDelegate.swift in Sources */,
+				25B746202A02244B006F385F /* UIPipVideoCall.swift in Sources */,
+				2518DDF429F282F900731125 /* UIDevice.swift in Sources */,
+				2518DDF729F2833700731125 /* QWebWidgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +373,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 23MKK4HKPH;
+				DEVELOPMENT_TEAM = XMAYR8P7MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qweb_widget_test/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Для передачи окружающей обстановки оператору, принявшего вызов, приложению необходим доступ к камере устройства.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Для установления голосовой связи между оператором и звонящим, приложению необходим доступ к микрофону устройства.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -323,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "qbox.qweb-widget-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmirZhunusov.qweb-widget-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,9 +402,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 23MKK4HKPH;
+				DEVELOPMENT_TEAM = XMAYR8P7MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qweb_widget_test/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Для передачи окружающей обстановки оператору, принявшего вызов, приложению необходим доступ к камере устройства.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Для установления голосовой связи между оператором и звонящим, приложению необходим доступ к микрофону устройства.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -350,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "qbox.qweb-widget-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmirZhunusov.qweb-widget-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

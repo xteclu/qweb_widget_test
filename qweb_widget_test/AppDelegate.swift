@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,10 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     nav = AppCoordinator(window: window!)
     nav.start()
+      
     
     return true
   }
 
+    func isAppForegroundActive() -> Bool {
+        return UIApplication.shared.applicationState == .active
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("In foreground real gansta shit, real foreground no cap yo")
+    }
 
 }
 

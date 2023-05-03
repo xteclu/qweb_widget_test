@@ -7,9 +7,12 @@
 		<key>NSAllowsArbitraryLoadsForMedia</key>
 		<true/>
 	</dict>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Для установления голосовой связи между оператором и звонящим, приложению необходим доступ к микрофону устройства.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Для передачи окружающей обстановки оператору, принявшего вызов, приложению необходим доступ к камере устройства.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>
