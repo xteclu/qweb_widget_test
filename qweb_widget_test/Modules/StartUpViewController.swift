@@ -18,8 +18,7 @@ class StartUpViewController: BaseViewController {
       WebViewController(settings: Settings(
           url: "https://kenes.1414.kz/widget/video-call",
           language: .ru,
-          call: Call(domain: "ios.kaspi.kz", type: .video, topic: "videotson",
-                     dynamicAttrs: ["service_code": "G-07"]
+          call: Call(domain: "ios.kaspi.kz", type: .video, topic: "dev"
                     )
       )),
       animated: false

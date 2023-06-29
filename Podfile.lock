@@ -1,0 +1,22 @@
+PODS:
+  - QboxWebWidget (0.2.1)
+
+DEPENDENCIES:
+  - QboxWebWidget (from `https://github.com/xteclu/QboxWebWidget.git`, tag `0.2.1`)
+
+EXTERNAL SOURCES:
+  QboxWebWidget:
+    :git: https://github.com/xteclu/QboxWebWidget.git
+    :tag: 0.2.1
+
+CHECKOUT OPTIONS:
+  QboxWebWidget:
+    :git: https://github.com/xteclu/QboxWebWidget.git
+    :tag: 0.2.1
+
+SPEC CHECKSUMS:
+  QboxWebWidget: fb37df2e7951e8f22f5240e9cf118c0cbb881ddb
+
+PODFILE CHECKSUM: bd694d7c3e32bdd559d386c761fef5e8fff45e93
+
+COCOAPODS: 1.11.3

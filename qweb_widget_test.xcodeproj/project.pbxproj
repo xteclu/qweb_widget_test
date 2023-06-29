@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		100BDEBB29A638F800FF4BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100BDEB929A638F800FF4BD6 /* LaunchScreen.storyboard */; };
 		100BDEC529A63EC100FF4BD6 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */; };
 		100BDEC729A63F0700FF4BD6 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100BDEC629A63F0700FF4BD6 /* BaseCoordinator.swift */; };
-		10206A0929AF4F1B005C94E4 /* QboxWebWidget in Frameworks */ = {isa = PBXBuildFile; productRef = 10206A0829AF4F1B005C94E4 /* QboxWebWidget */; };
+		68EE6AF6632CB49E851F2A9B /* Pods_qweb_widget_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B20D0C18577728A649EE20 /* Pods_qweb_widget_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +25,9 @@
 		100BDEBC29A638F800FF4BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		100BDEC429A63EC100FF4BD6 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		100BDEC629A63F0700FF4BD6 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		22B20D0C18577728A649EE20 /* Pods_qweb_widget_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qweb_widget_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB298AE8041A07E49C44C42 /* Pods-qweb_widget_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qweb_widget_test.release.xcconfig"; path = "Target Support Files/Pods-qweb_widget_test/Pods-qweb_widget_test.release.xcconfig"; sourceTree = "<group>"; };
+		BD947A0FB22B4B2FE8814755 /* Pods-qweb_widget_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qweb_widget_test.debug.xcconfig"; path = "Target Support Files/Pods-qweb_widget_test/Pods-qweb_widget_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10206A0929AF4F1B005C94E4 /* QboxWebWidget in Frameworks */,
+				68EE6AF6632CB49E851F2A9B /* Pods_qweb_widget_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,8 @@
 			children = (
 				100BDEAD29A638F700FF4BD6 /* qweb_widget_test */,
 				100BDEAC29A638F700FF4BD6 /* Products */,
+				EB835F5BB5458C989833EBA4 /* Pods */,
+				BC64732BBF9A659497CA082C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +90,24 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		BC64732BBF9A659497CA082C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B20D0C18577728A649EE20 /* Pods_qweb_widget_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB835F5BB5458C989833EBA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD947A0FB22B4B2FE8814755 /* Pods-qweb_widget_test.debug.xcconfig */,
+				9AB298AE8041A07E49C44C42 /* Pods-qweb_widget_test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,18 +115,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 100BDEBF29A638F800FF4BD6 /* Build configuration list for PBXNativeTarget "qweb_widget_test" */;
 			buildPhases = (
+				604B5408DDC0D8A7B7D93063 /* [CP] Check Pods Manifest.lock */,
 				100BDEA729A638F700FF4BD6 /* Sources */,
 				100BDEA829A638F700FF4BD6 /* Frameworks */,
 				100BDEA929A638F700FF4BD6 /* Resources */,
+				37D9AC9AD4BEA4F20BE80303 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = qweb_widget_test;
-			packageProductDependencies = (
-				10206A0829AF4F1B005C94E4 /* QboxWebWidget */,
-			);
 			productName = qweb_widget_test;
 			productReference = 100BDEAB29A638F700FF4BD6 /* qweb_widget_test.app */;
 			productType = "com.apple.product-type.application";
@@ -124,7 +146,7 @@
 				};
 			};
 			buildConfigurationList = 100BDEA629A638F600FF4BD6 /* Build configuration list for PBXProject "qweb_widget_test" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,9 +154,6 @@
 				Base,
 			);
 			mainGroup = 100BDEA229A638F600FF4BD6;
-			packageReferences = (
-				10206A0729AF4F1B005C94E4 /* XCRemoteSwiftPackageReference "QboxWebWidget" */,
-			);
 			productRefGroup = 100BDEAC29A638F700FF4BD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +175,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37D9AC9AD4BEA4F20BE80303 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qweb_widget_test/Pods-qweb_widget_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qweb_widget_test/Pods-qweb_widget_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qweb_widget_test/Pods-qweb_widget_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		604B5408DDC0D8A7B7D93063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qweb_widget_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		100BDEA729A638F700FF4BD6 /* Sources */ = {
@@ -306,6 +367,7 @@
 		};
 		100BDEC029A638F800FF4BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD947A0FB22B4B2FE8814755 /* Pods-qweb_widget_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -333,6 +395,7 @@
 		};
 		100BDEC129A638F800FF4BD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB298AE8041A07E49C44C42 /* Pods-qweb_widget_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,25 +443,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		10206A0729AF4F1B005C94E4 /* XCRemoteSwiftPackageReference "QboxWebWidget" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/xteclu/QboxWebWidget.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		10206A0829AF4F1B005C94E4 /* QboxWebWidget */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 10206A0729AF4F1B005C94E4 /* XCRemoteSwiftPackageReference "QboxWebWidget" */;
-			productName = QboxWebWidget;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 100BDEA329A638F600FF4BD6 /* Project object */;
 }
